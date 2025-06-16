@@ -1,2 +1,9 @@
+<!-- Splash screen -->
+<div [ngClass]="{'splash-screen': true, 'splash-hide': !isLoading}">
+  <h1 class="typing-animation">Blog Pessoal<span class="cursor">|</span></h1>
+</div>
+
+<div [ngClass]="{'main-site': true, 'main-show': !isLoading}">
 <app-home></app-home>
 <router-outlet></router-outlet>
+</div>

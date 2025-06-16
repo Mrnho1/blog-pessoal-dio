@@ -7,6 +7,9 @@
     align-items: flex-start;
     justify-content: flex-start;
 }
+.big-card_photo > img{
+    width: 100%;
+}
 
 .big-card_title > h1{
     font-size: 20px;
