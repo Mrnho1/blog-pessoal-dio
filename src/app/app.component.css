@@ -23,17 +23,17 @@
   pointer-events: none;
 }
 
-/* Animação de digitação mais rápida */
+/* Animação de digitação com branco suave e menos brilho */
 .typing-animation {
   font-family: 'Courier New', Courier, monospace;
   font-size: 3rem;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 4px solid #00e0ff;
+  border-right: 4px solid #ffffff;
   width: 0;
   animation: typing 1.2s steps(14) forwards, blink-caret 0.6s step-end infinite;
-  color: #00e0ff;
-  text-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff, 0 0 30px #00e0ff;
+  color: #ffffff;
+  text-shadow: 0 0 4px #ffffff, 0 0 8px #ffffff;
 }
 
 .cursor {
@@ -42,12 +42,12 @@
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 14ch; }
+  to { width: 12ch; }
 }
 
 @keyframes blink-caret {
   0%, 100% { border-color: transparent; }
-  50% { border-color: #00e0ff; }
+  50% { border-color: #ffffff; }
 }
 
 /* Conteúdo inicial oculto */
