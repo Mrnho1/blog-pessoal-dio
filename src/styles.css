@@ -3,7 +3,7 @@
   --color-background: #F5F5F5;        /* fundo escuro */
   --color-text-primary: #121212;      /* branco off-white para títulos */
   --color-text-secondary: #B0B0B0;    /* cinza claro para textos */
-  --color-accent: #BB86FC;            /* roxo suave para detalhes (inspirado no roxo dribbble) */
+  --color-accent: #f5f5f5;            /* roxo suave para detalhes (inspirado no roxo dribbble) */
 
   /* Fontes */
   --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
