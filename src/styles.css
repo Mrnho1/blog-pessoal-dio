@@ -1,8 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* background-color: #111111; */
-    /* color: #efefef; */
+:root {
+  /* Cores */
+  --color-background: #F5F5F5;        /* fundo escuro */
+  --color-text-primary: #121212;      /* branco off-white para títulos */
+  --color-text-secondary: #B0B0B0;    /* cinza claro para textos */
+  --color-accent: #BB86FC;            /* roxo suave para detalhes (inspirado no roxo dribbble) */
+
+  /* Fontes */
+  --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Tamanhos de fonte */
+  --font-size-h1: 64px;
+  --font-size-h2: 32px;
+  --font-size-body: 18px;
+  --font-size-small: 14px;
+
+  /* Espaçamentos */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+
+  /* Outros */
+  --border-radius: 32px;
+}
+
+
+/* Reset básico */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.5;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }

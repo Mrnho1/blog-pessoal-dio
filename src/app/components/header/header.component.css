@@ -1,0 +1,78 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-medium) var(--spacing-large);
+  background-color: var(--color-background);
+  gap: var(--spacing-large);
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+/* Container do menu */
+.navbar-container-menu {
+  flex: 1;
+  border: solid 1px var(--color-text-secondary);
+  padding-left: var(--spacing-large);
+  padding-right: var(--spacing-large); 
+  padding-bottom: var(--spacing-medium);
+  padding-top: var(--spacing-medium);
+  display: flex;
+  justify-content: flex-start;
+  border-radius: var(--border-radius);
+}
+
+/* Menu (ul) */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-medium);
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu links */
+.navbar-menu a {
+  display: flex;
+  align-items: center;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: var(--font-size-body);
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  line-height: 1;
+  position: relative;
+}
+
+/* Ponto antes dos links */
+.navbar-menu a::before {
+  content: '●';
+  font-size: 0.6em;
+  margin-right: 6px;
+  color: inherit;
+  display: inline-block;
+}
+
+/* Hover dos links */
+.navbar-menu a:hover {
+  color: var(--color-accent);
+  background-color: #2a2a2a;
+  transform: translateY(-1px);
+}
+
+.navbar-menu a.active {
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+
+.navbar-menu a.active:hover{
+  color: var(--color-accent);
+  background-color: #2a2a2a;
+}
