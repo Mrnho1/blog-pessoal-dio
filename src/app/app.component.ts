@@ -14,9 +14,22 @@ import { NgClass } from '@angular/common';
 export class AppComponent {
   isLoading = true;
 
-  ngOnInit() {
-    setTimeout(() => {
+  ngOnInit(): void {
+    // Verifica se está no navegador
+    if (typeof window !== 'undefined' && typeof sessionStorage !== 'undefined') {
+      const splashShown = sessionStorage.getItem('splashShown');
+
+      if (splashShown) {
+        this.isLoading = false;
+      } else {
+        setTimeout(() => {
+          this.isLoading = false;
+          sessionStorage.setItem('splashShown', 'true');
+        }, 4000);
+      }
+    } else {
+      // Fallback se estiver no servidor (SSR)
       this.isLoading = false;
-    }, 2200);
+    }
   }
 }
