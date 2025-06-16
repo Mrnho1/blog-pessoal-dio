@@ -1,27 +1,27 @@
-# BlogPessoal
+# Nome do Projeto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+Breve descrição do projeto e o que ele faz.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Visão Geral
 
-## Code scaffolding
+Este projeto conta com uma interface ilustrada pela imagem abaixo:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Imagem ilustrativa](src/assets/image.png)
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Créditos das Imagens
 
-## Running unit tests
+As imagens usadas neste projeto são do Unsplash, plataforma de fotos gratuitas e de alta qualidade.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+A imagem ilustrativa original foi criada por [criador no Dribbble](https://dribbble.com/shots/6518782), acessada via link direto.
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Como usar
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
