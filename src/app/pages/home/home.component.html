@@ -5,6 +5,16 @@
         <app-big-card></app-big-card>
     </div>
     <div class="featured-right">
+    <h3 class="sidebar-title">Últimos Posts</h3>
 
-    </div>
+    <ng-container *ngFor="let post of posts">
+      <app-small-card
+        [image]="post.image"
+        [title]="post.title"
+        [date]="post.date"
+      ></app-small-card>
+    </ng-container>
+
+    <button class="sidebar-button">Ver todos</button>
+  </div>
 </section>
