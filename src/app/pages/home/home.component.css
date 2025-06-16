@@ -1,0 +1,19 @@
+.featured-posts {
+  max-width: 1290px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-large);
+  padding: var(--spacing-large);
+  align-items: start;
+}
+
+.featured-left{
+  border-radius: var(--border-radius);
+  width: 50%;
+}
+.featured-right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-medium);
+}
